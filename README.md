@@ -63,6 +63,7 @@ El servidor se ejecutará en http://localhost:5000.
 
 ## Ejemplos de Código
 Modelo de Producto
+````bash
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
