@@ -44,48 +44,23 @@ mongoose.connect('mongodb://localhost:27017/tienda_ropa', {
   useUnifiedTopology: true
 });
 
+## Frontend de la aplicación web:
+  [LORENZZO](https://github.com/OScorpion20/Lorenzzo.git)
+
 ## Ejecución
 Inicia el servidor:
 npm run dev
 El servidor se ejecutará en http://localhost:5000.
 
 ## Rutas de la API
-### Obtener la Lista de Productos
-URL: /products
-Método: GET
-Descripción: Obtiene la lista de todos los productos.
-Respuesta:
-[
-  {
-    "_id": "609c1f1f5311234567890abc",
-    "name": "Producto 1",
-    "description": "Descripción del Producto 1",
-    "price": 100,
-    "stock": 10,
-    "imgUrl": "http://example.com/image.jpg",
-    "oldPrice": 120
-  },
-  ...
-]
-### Agregar un Nuevo Producto
-URL: /products/add
-Método: POST
-Descripción: Agrega un nuevo producto.
-Cuerpo de la Solicitud:
-{
-  "name": "Producto 2",
-  "description": "Descripción del Producto 2",
-  "price": 150,
-  "stock": 20,
-  "imgUrl": "http://example.com/image2.jpg",
-  "oldPrice": 170
-}
-Respuesta:
-json
-Copiar código
-{
-  "message": "Product added!"
-}
+    
+## Configuración de componentes
+| Nombre del Componente | Descripción | Enlace |
+|-----------------------|-------------|--------|
+| models           | Contiene el modelo de datos de los productos. | [models](./models) |
+| routes            | Contiene las rutas de la API para manejar las solicitudes HTTP. | [routes](./routes) |
+| index.js             | Archivo principal que configura el servidor Express y la conexión a MongoDB. | [index.js](./index.js) |
+
 ## Ejemplos de Código
 Modelo de Producto
 const mongoose = require('mongoose');
